@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartCalc | Professional Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="calculator">
+
+    <div class="top-bar">
+        <div>
+            <h1>SmartCalc</h1>
+            <p>Simple & Powerful</p>
+        </div>
+
+        <button id="theme-toggle" title="Toggle Theme">☀️</button>
+    </div>
+
+    <div class="display-container">
+        <div id="history-display"></div>
+        <input type="text" id="display" value="0" readonly>
+    </div>
+
+    <div class="buttons">
+
+        <button onclick="clearDisplay()" class="function-btn">AC</button>
+        <button onclick="deleteLast()" class="function-btn">⌫</button>
+        <button onclick="appendValue('%')" class="function-btn">%</button>
+        <button onclick="appendValue('/')" class="operator">÷</button>
+
+        <button onclick="appendValue('7')">7</button>
+        <button onclick="appendValue('8')">8</button>
+        <button onclick="appendValue('9')">9</button>
+        <button onclick="appendValue('*')" class="operator">×</button>
+
+        <button onclick="appendValue('4')">4</button>
+        <button onclick="appendValue('5')">5</button>
+        <button onclick="appendValue('6')">6</button>
+        <button onclick="appendValue('-')" class="operator">−</button>
+
+        <button onclick="appendValue('1')">1</button>
+        <button onclick="appendValue('2')">2</button>
+        <button onclick="appendValue('3')">3</button>
+        <button onclick="appendValue('+')" class="operator">+</button>
+
+        <button onclick="appendValue('0')" class="zero">0</button>
+        <button onclick="appendValue('.')">.</button>
+        <button onclick="calculate()" class="equal">=</button>
+
+    </div>
+
+    <div class="calculator-footer">
+        <span>⌨️ Keyboard supported</span>
+        <span>•</span>
+        <span>Made by Sakshi Yadav</span>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
